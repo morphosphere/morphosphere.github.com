@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="Welcome" content="MorphoSphere" />
-  <title>MorphoSphere - A deep learning framework to score cancer cell proliferation and oncolytic virus efficacy in spheroid models</title>
-  <link rel="shortcut icon" href="favicon.ico">
+  <title>MorphoSphere - Learning about spheroid killing</title>
+  <link rel="shortcut icon" href="Logo_A.ico">
 
 <script src="ga.js"></script>  
 </head>
 
 <body>
 
-<xmp theme="superhero" style="display:none;">
-![MatlabCompat.jl](img/Logo_A_txt_aside.png "MatlabCompat.jl")
+<xmp theme="cyborg" style="display:none;">
+![MorphoSphere](img/Logo_A_txt_aside.png "MorphoSphere")
 
-### MATLAB/Octave functions library for Julia, fork us on on [GitHub](http://github.com/MatlabCompat/MatlabCompat.jl)
+#### A deep learning framework to score cancer cell proliferation and oncolytic virus efficacy in 3D tissue models. Fork us on on [GitHub](https://github.com/morphosphere/Morphosphere.py).
 
-###[__Home__](home.html) : [__Documentation__](docu.html) : [__Download__](download.html) : [__Contact__](contact.html)
-
-
-### Julia library aimed at simplifying conversion of legacy MATLAB/Octave code into Julia by providing functions similar to MATLAB/Octave
+##[__Home__](home.html) : [__Documentation__](docu.html) : [__Download__](download.html) : [__Contact__](contact.html)
 
 
+### MorphoShere - Learning about spheroid killing
 
-Julia is a new language with a dynamically growing community. It has a lot of syntax similarities to MATLAB/Octave with potential to build higher performance software. Because of this many developers in technical computing consider switching from MATLAB/Octave to Julia. This switch however maybe quite difficult in situations when one has a bulk amount of legacy code running on the daily basis. To simplify to transition of your legacy MATLAB/Octave code we have developed "MatlabCompat" a Julia library with a collection of functions rewritten from scratch under an open source MIT "Expat" license and some are named similarly to functions in MATLAB/Octave.
-
-
-
-However, as a word of caution Julia is not MATLAB/Octave and was never meant to be. This library is not meant to substitute any commercial products (including those of Mathworks Inc.), nor is it meant to make Julia language closer to MATLAB/Octave. THe one and sole purpose of this library is to pave a way for enthusiast MATLB/Octave developers willing to engage with Julia open source language. For more information and help please refer to the [Julia language homepage](http://www.julialang.org/)
+Cancer is caused by uncontrolled cell proliferation, which eventually leads to life-threatening conditions. Despite of novel treatment approaches, the disease remains a major cause of death worldwide. In order to overcome the often low predictive value of pre-clinical two-dimensional cell culture studies, three-dimensional (3D) tissue models have been developed. Spheroids are self-assembled, organotypic micro-scale tissue mimetics representing healthy or cancerous tissue, depending on the cells they are grown from, providing significant biological complexity. Their behavior is determined by integrating manifold cues from their environment, a complexity, which monolayer cell culture models fail to capture. Extensive studies have been performed comparing efficacy predictions of two-dimensional(2D) compared to 3D cell culture studies proving superiority of the spheroid tumor model. Accordingly, their implementation in antitumor drug testing has been proposed early on. 
 
 
+The ability of viruses to kill cancer cells has been known for over a century. They ultimately kill their host cell by lysis, wherefore the employed natural or genetically engineered viruses are summarized as oncolytic viruses. Manifold natural and engineered viruses are known to kill cancer cells, but very few have proven successful in the clinics.  We aim to use spheroids to answer how oncolytic virus infection affects spheroid integrity and growth, and finally how viruses spread in 3D tissues. 
 
-## Disclaimer
+
+Continious technological advances allow custom generation of spheroids from an increasing number of tissues and cancers robust enough to perform spheroid-based high-throughput screening (HCS) assays. Moreover, latest cell culture plate developments enable live transmission light (TL) imaging. Based hereon, we have set up a simplified tumor model to understand the parameters controlling oncolytic efficacy of viruses in tumor tissue. Yet, the lack of suitable screening analysis platforms prevents basic and applied research to take full advantage of the spheroid model complexity. That's why we have developed Morphosphere to enable high-throughput screening of scaffold-free spheroids inoculated with different viruses. We employ high-throughput live cell imaging and automatically analyze, quantify and clasify the images by MorphoShere, our newly developed automated deep learning image quantification framework. MorphoSphere monitors spheroid dynamics by measuring morphological and textural features. We employ convolutional neural network-based approaches to automatically classify spheroidicity and viability of cell aggregates. 
+
+
+Since we expect MorphoSphere to be a valuable tool for the automated analysis of any spheroid-based HCS assay, we have put it on [GitHub](https://github.com/morphosphere/Morphosphere.py).
+
+
+### Latest release
+
+MorphoSphere 2.0 has been released on September 4th 2016.
+
+
+### Disclaimer
 All the code presented in this library was written from scratch and by no means or intentions presents a complete overlap with product of Mathworks Inc., nor any intentions to violate any of materials copyrighted by Mathworks Inc. or any other respective third party copyright owner. By reading, downloading, forking or using this library you agree to do it at your own risk and there is no guarantee that you MATLAB/Octave code will work in a similar fashion as it would with products of Mathworks Inc. Code written here is based on open source Julia language and published state-of-the-art algorithms being property of the public domain. Any overlap with property of respective copyright owners is pure accidental and may be caused by using published state-of-the-art algorithms being property of the public domain.
 ***
 
-####            Copyright © 2016 Vardan Andriasyan, Fanny Georgi, Artur Yakimovich
+####            Copyright &copy; 2016 Vardan Andriasyan, Fanny Georgi, Artur Yakimovich, Luca Murer, Robert Witte
 <br>
 <!-- gooogle analytics script here-->
 
@@ -42,4 +50,5 @@ All the code presented in this library was written from scratch and by no means 
 
 <script src="v/0.2/strapdown.js"></script>
 </body>
+
 </html>
