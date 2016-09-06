@@ -19,6 +19,9 @@
 
 ##[__Home__](index.html) : [__Use__](use.html) : [__Develop__](develop.html) :  [__Download__](download.html) : [__Contact__](contact.html)
 
+<!-- Define hierachy of headings: -->
+
+
 <br>
 ## Software Infrastructure
 
@@ -30,7 +33,11 @@
 
 1. Go to <https://www.continuum.io/downloads>. Download **Anaconda** 2.7, chose the "Windows 64bit Graphical Installer" or "Windows 32bit Graphical Installer" depending on your system.
 
-2. Start the Anaconda installation wizard by opening the downloaded .exe file. We recommend to install **Anaconda** directly in C:\\ and for all users. Specify the name of the destination folder that will be created, we suggest "Anaconda27". This will also place a "Python Scripts" folder in C:\\. Make sure to select "Add environment path". Make sure to install the following packages: *XXXXXXXXXXXXXXX list goes here XXXXXXXXXXXXXXXX*
+2. Start the Anaconda installation wizard by opening the downloaded .exe file. We recommend to install **Anaconda** directly in C:\\ and for all users. Specify the name of the destination folder that will be created, we suggest "Anaconda27". This will also place a "Python Scripts" folder in C:\\. Make sure to select "Add environment path". Make sure to install the following packages: 
+
+*tba*
+
+<!-- Add the list as table --> 
 
 3. This step can be omitted if you start your python editor exclusively via Anaconda. Ensure that the environment variables have been set correctly. To test this, open the **Command Promt**, and try to open the Jupiter notebook by typing `jupyter notebook`. This should open a new **Browser** tab with the address <http://localhost:8888/tree>. Otherwise, open the **Edit the system environment variables** manager, note that you need administration priviledges. Select "Environment variables...". Ensure that "C:\ *YourPath*\Anaconda27;C:\ *YourPath*\Anaconda27\Scripts;C:\ *YourPath*\Anaconda27\Library\bin;" is listed in "User variables for *YourAdmin*".
 
@@ -85,6 +92,9 @@ If you wish to use stand-alone [Python 2.7](https://www.python.org/downloads/), 
 
 ### Introduction to Deep Learning
 
+<!-- change text to more scientific style-->
+
+
 In **machine learning**, computer algorithms can be trained to autonomously make predictions on data based on using self-acquired training set-based knowledge rather than a priori user-defined strictly static program instructions. For instance, to estimate the value of a property based on the square meters, the number of rooms, the age of the house etc., nicely explained by [Computerphile](https://www.youtube.com/watch?v=l42lr8AlrHk). Area, number of rooms or age of the house are inputs for the estimation. Given a number of houses with known values, the algorithm can “learn” based on which of these inputs (or on which combination) the value can be most confidently predicted. This back-propagating weight optimization is referred to as training. The optimal prediction function is a weighted (not all inputs are as relevant as others) sum over the inputs, which in the following can be used to predict the value of a new property. The structure of the computational algorithm is also described by referring to inputs, summing function and outputs as nodes, which are connected by edges representing their weights. Due to the similarities to information handling, processing and communication patterns between neurons in the nervous system, such network-like machine learning architectures are called **neural networks**.
 
 In order to answer more complex questions, one likely needs to add more and more numbers of weighted combinations of inputs called layers, resulting in a deep neural network. Deep neural network are a hierarchical feed-forward cascade of many layers, where each successive layer uses the output from the previous layer as input. Citing [Wikipedia](https://en.wikipedia.org/wiki/Deep_learning), "**deep learning** (also known as deep structured learning, hierarchical learning or deep machine learning) is a branch of machine learning based on a set of algorithms that attempt to model high-level abstractions in data by using a deep graph with multiple processing layers, composed of multiple linear and non-linear transformations." 
@@ -94,10 +104,11 @@ In order to automatically classify images (this is a dog, this a cat), again nic
 Ever since a CNN-based algorithm won the annual [ImageNet challenge]( http://image-net.org/challenges/LSVRC/2016/) in 2012, the concept of CNNs has been attracting a lot of attention. Image classification using CNNs has been shown to be very successful and highly accurate.
 
 ![Deep Learning](img/DeepLearning.png "Deep Learning")
+<!-- update according to poster -->
 
 ### Introduction to the **Theano** Library
 
-Intro text **Theano**
+<!-- Intro text **Theano** -->
 
 Deep learning in **MorphoSphere** is based on the [Theano](http://deeplearning.net/software/theano/) **Python** library.
 
@@ -132,12 +143,13 @@ GitHub-experienced users may clone the [Mophosphere.py repository](https://githu
 
 **MorphoSphere** consists of core **Python** script, which calls a number of functions, which are provided as separate .py files.
 
-Flowchart image
-
+<!-- Flowchart image of core calling functions -->
 
 ### Customizing **MorphoSphere**
 
 We are currently working on a user interface. For the meantime, the **MorphoSphere** script variables have to be customized manually in the code. In the following, all parameters and how they can or have to be customized are described:
+
+*tba*
 
 #### generateTrainingSet.py
 
@@ -189,7 +201,10 @@ Opening **MorphoSphere** via the **Command Prompt**
 <br>
 ## Building your custom CNN
 
-### Defining Training and Validation Set
+*tba*
+
+### Defining Training, Validation and Test Data Set
+<!-- Include GUI from Artur-->
 
 ### CNN Training
 
@@ -199,10 +214,15 @@ Opening **MorphoSphere** via the **Command Prompt**
 <br>
 ## Quick Guide using Sample Images Example
 
+*tba*
+<!-- Provide sample data without experiment names but ensure regex usage-->
+
 <br>
 ***
  <div align="center">
  ####            Copyright &copy; 2016 Vardan Andriasyan, Fanny Georgi, Artur Yakimovich, Luca Murer, Robert Witte
+**MorphoSphere** is published under the terms of the [GNU General Public License](https://www.gnu.org/licenses/).
+
 This [GitPage](https://pages.github.com/) was created using [Strapdown](http://strapdownjs.com/), [Markdown](http://whatismarkdown.com/) and [Bootswatch](https://bootswatch.com/). Thanks guys!
 </div> 
 <br>
